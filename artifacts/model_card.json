@@ -1,0 +1,23 @@
+{
+  "created_utc": "2025-10-04T07:20:29Z",
+  "classifier_metrics": {
+    "train_auc": 0.9999999999999999,
+    "train_ap": 1.0,
+    "train_precision@0.5": 1.0,
+    "train_recall@0.5": 1.0,
+    "train_f1@0.5": 1.0,
+    "test_auc": 0.9316278160514458,
+    "test_ap": 0.818421123088947,
+    "test_precision@0.5": 0.8099013053167781,
+    "test_recall@0.5": 1.0,
+    "test_f1@0.5": 0.8949673696986754,
+    "detections": 2081,
+    "leadtime_mean_h": 147.39940733621657,
+    "leadtime_p50_h": 136.16666666666666,
+    "leadtime_p90_h": 243.33333333333334
+  },
+  "rul_mae_hours_test": 49.812326805932585,
+  "n_train": 280512,
+  "n_test": 70122,
+  "timestamp": "2025-10-04T07:20:29.277240Z"
+}

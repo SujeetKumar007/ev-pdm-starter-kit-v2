@@ -1,0 +1,38 @@
+# Synthetic simulation config
+seed: 42
+start: "2025-01-01 00:00:00"
+days: 60
+evse: 20
+freq_min: 5
+
+# Failure horizon labeling
+label_horizon_days: 7
+
+# Degradation knobs (mean +- jitter per EVSE)
+degradation:
+  connector_wear_per_insertion: 0.00008
+  coolant_flow_drop_per_day: 0.002
+  fan_rpm_drop_per_day: 3.0
+  dc_ripple_rise_per_mwh: 0.4   # mV per MWh delivered
+  thermal_margin_drop_per_day: 0.015
+
+# Failure thresholds
+thresholds:
+  connector_temp_c: 90
+  cabinet_temp_c: 80
+  coolant_flow_lpm: 5.0
+  fan_rpm: 900
+  dc_bus_ripple_v: 9.0
+
+# Usage profile
+usage:
+  base_sessions_per_hour: 0.6
+  peak_multiplier: 2.1
+  weekend_multiplier: 1.1
+
+# Power quality noise
+power_quality:
+  thd_base_pct: 3.5
+  thd_spike_pct: 9.0
+  imb_base_pct: 1.2
+  imb_spike_pct: 4.0
